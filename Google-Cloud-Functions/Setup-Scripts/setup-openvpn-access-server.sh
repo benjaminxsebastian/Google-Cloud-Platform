@@ -2,8 +2,8 @@
 
 
 INSTALL_FILE_PATH="./openvpn-access-server-install.txt"
-LOG_FILE_PATH="./openvpn-access-server-log.txt"
-CRON_JOB_FILE_PATH="./openvpn-access-server-cronjob.txt"
+LOG_FILE_PATH="./setup-openvpn-access-server-log.txt"
+CRON_JOB_FILE_PATH="./openvpn-access-server-install-cronjob.txt"
 
 
 log() {
