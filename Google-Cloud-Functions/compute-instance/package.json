@@ -1,0 +1,40 @@
+{
+    "name": "@benjamin.x.sebastian/compute-instance",
+    "version": "0.1.0",
+    "description": "Functionality to control the free account compute instance in the Google Cloud Platform.",
+    "repository": "github:benjaminxsebastian/Google-Cloud-Platform",
+    "license": "Apache-2.0",
+    "author": "Benjamin Sebastian",
+    "scripts": {
+        "install": "bash ./install-script.sh",
+        "lint": "cd ../.. && gts lint",
+        "fix": "cd ../.. && gts fix",
+        "compile": "../../node_modules/yamljs/bin/yaml2json -p ../../deployment/parameters.yaml > ./src/parameters.json && ../../node_modules/node-jq/bin/jq 'del(.scripts, .devDependencies)' ./package.json > ./src/package.json && tsc",
+        "test": "jest ----coverage",
+        "clean": "rimraf ./coverage && gts clean",
+        "prepare": "npm run compile",
+        "pretest": "npm run compile",
+        "posttest": "npm run lint"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "@types/js-yaml": "^4.0.5",
+        "@types/node": "17.0.43",
+        "@types/uuid": "^8.3.4",
+        "@types/express": "4.17.13",
+        "gts": "^3.1.0",
+        "jest": "^27.5.1",
+        "node-jq": "^2.3.3",
+        "ts-jest": "^27.1.4",
+        "typescript": "^4.7.3",
+        "uuid": "^8.3.2",
+        "yamljs": "^0.3.0"
+    },
+    "dependencies": {
+        "gcp-metadata": "^5.0.0",
+        "@google-cloud/compute": "^3.3.0"
+    },
+    "engines": {
+        "node": ">=v16.0.0"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Google-Cloud-Functions/budget-control",
+            "cwd": "${workspaceFolder}/Google-Cloud-Functions/budget-control",
+            "preLaunchTask": "Before testing Google-Cloud-Functions/budget-control",
+            "runtimeArgs": ["--inspect-brk", "${workspaceRoot}/node_modules/jest/bin/jest.js", "--runInBand", "--coverage", "--config", "${workspaceRoot}/Google-Cloud-Functions/budget-control/jest.config.js"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Google-Cloud-Functions/compute-instance",
+            "cwd": "${workspaceFolder}/Google-Cloud-Functions/compute-instance",
+            "preLaunchTask": "Before testing Google-Cloud-Functions/compute-instance",
+            "runtimeArgs": ["--inspect-brk", "${workspaceRoot}/node_modules/jest/bin/jest.js", "--runInBand", "--coverage", "--config", "${workspaceRoot}/Google-Cloud-Functions/compute-instance/jest.config.js"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

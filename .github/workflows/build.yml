@@ -1,0 +1,23 @@
+name: Build Node.js Package
+
+on:
+  repository_dispatch:
+    types: [trigger-build-workflow]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16, 18]
+    steps:
+      - name: 'Checkout Source Code'
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies, lint and test
+        run: npm ci
+      - run: npm run lint
+      - run: npm test

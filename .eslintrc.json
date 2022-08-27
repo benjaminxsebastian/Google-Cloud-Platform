@@ -1,0 +1,9 @@
+{
+    "extends": "./node_modules/gts/",
+    "rules": {
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+        "no-multiple-empty-lines": ["error", { "max": 2 }],
+        "prettier/prettier": ["error", {"tabWidth": 4, "trailingComma": "none", "bracketSpacing": true, "endOfLine": "auto"}]
+    }
+}
