@@ -1,6 +1,6 @@
 {
     "name": "@benjamin.x.sebastian/compute-instance",
-    "version": "0.1.0",
+    "version": "0.1.5",
     "description": "Functionality to control the free account compute instance in the Google Cloud Platform.",
     "repository": "github:benjaminxsebastian/Google-Cloud-Platform",
     "license": "Apache-2.0",
