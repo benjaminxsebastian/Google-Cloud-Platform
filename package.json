@@ -1,6 +1,6 @@
 {
     "name": "@benjamin.x.sebastian/google-cloud-platform",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Setting up the management of a free instance on the Google Cloud Platform.",
     "repository": "github:benjaminxsebastian/Google-Cloud-Platform",
     "license": "Apache-2.0",
