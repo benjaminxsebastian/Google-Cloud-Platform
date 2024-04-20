@@ -37,7 +37,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
     SET "region=--region="
     SET entryPointsAndTriggers=
     SET numberOfEntryPointsAndTriggers=0
-    SET "runtime=--runtime=nodejs16"
+    SET "runtime=--runtime=nodejs20"
     SET source=
     FOR %%D IN (../..) DO (
         SET source=%%~nxD
